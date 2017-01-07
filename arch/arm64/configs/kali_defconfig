@@ -867,7 +867,25 @@ CONFIG_SOCKEV_NLMCAST=y
 #
 # CONFIG_NET_PKTGEN is not set
 # CONFIG_NET_DROP_MONITOR is not set
-# CONFIG_HAMRADIO is not set
+CONFIG_HAMRADIO=y
+
+#
+# Packet Radio protocols
+#
+CONFIG_AX25=y
+CONFIG_AX25_DAMA_SLAVE=y
+# CONFIG_NETROM is not set
+# CONFIG_ROSE is not set
+
+#
+# AX.25 network device drivers
+#
+# CONFIG_MKISS is not set
+# CONFIG_6PACK is not set
+# CONFIG_BPQETHER is not set
+# CONFIG_BAYCOM_SER_FDX is not set
+# CONFIG_BAYCOM_SER_HDX is not set
+# CONFIG_YAM is not set
 # CONFIG_CAN is not set
 # CONFIG_IRDA is not set
 CONFIG_BT=y
@@ -3859,7 +3877,9 @@ CONFIG_FAT_FS=y
 CONFIG_VFAT_FS=y
 CONFIG_FAT_DEFAULT_CODEPAGE=437
 CONFIG_FAT_DEFAULT_IOCHARSET="iso8859-1"
-# CONFIG_NTFS_FS is not set
+CONFIG_NTFS_FS=y
+# CONFIG_NTFS_DEBUG is not set
+CONFIG_NTFS_RW=y
 
 #
 # Pseudo filesystems
